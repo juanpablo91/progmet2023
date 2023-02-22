@@ -23,20 +23,26 @@ void isPrimeSexy(const int &N){
   int flag =N; 
   int p =1;
   int q = 1;
-
+  
+  //loop principal encargado de encontrar los primos sexys
   while (flag > 0)
   { 
     p+=1;
 
     if(isPrime(p) ){
       q = p + 6;
+
       if(isPrime(q)){
-        flag -=1;
+        flag -=1; //se encontro una pareja, restaramos a nuestra variable de control
       }
+
     }
   }
+  //por ultimo se imprime
   std::cout << "(" << p << "," << q << ")" << "\n";
 }
+
+//verificador para m numero si es primo
 bool isPrime(int n){
   // Corner case
   if (n <= 1){
