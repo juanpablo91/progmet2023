@@ -1,16 +1,20 @@
 #include<iostream>
 
+/*
+Juan Pablo Gonzalez Rodriguez
+*/
+
 bool isPrime(int n);
 void isPrimeSexy(const int &N);
  
 int main(void){
   const int N1 = 3;
   const int N2 = 4;
-  const int N3 = 6;
+  const int N3 = 2;
 
   isPrimeSexy(N1);
-  //isPrimeSexy(N2);
-  //isPrimeSexy(N3);
+  isPrimeSexy(N2);
+  isPrimeSexy(N3);
 
   return 0;
 }
@@ -27,7 +31,6 @@ void isPrimeSexy(const int &N){
     if(isPrime(p) ){
       q = p + 6;
       if(isPrime(q)){
-        std::cout << "(" << p << "," << q << ")" << "\n";
         flag -=1;
       }
     }
