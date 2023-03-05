@@ -64,4 +64,7 @@ using funtion pointers and make extrapolation Richardson using also funtion poin
 2.extrapolation richardson (receives forward or central)
 3.print the diffs relatives, of forward and central and with Richardson
 4. make the picture of thats diff as a funtion of h
+
+Github repository directory: semana 4
+https://github.com/juanpablo91/progmet2023/tree/master/semana%204
 */
